@@ -2,7 +2,7 @@
 // 완주하지 못한 선수
 // https://siyoon210.tistory.com/85 참고
 // https://github.com/siyoon210/Algorithm-DataStructure/blob/master/src/exercise/hash/Hash.java 참고
-
+/*
 package hash;
 
 import java.util.LinkedList;
@@ -138,7 +138,7 @@ class Solution {
 				break;
 			}
 		}
-//System.out.println("answer:" + answer);
+System.out.println("answer:" + answer);
 		return answer;
 	}
 }
@@ -160,3 +160,4 @@ public class hash42576 {
 		soultion.solution(participant, completion); //"mislav"
 	}
 }
+*/
