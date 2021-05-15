@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/
 // 1247. Minimum Swaps to Make Strings Equal
-// https://github.com/cherryljr/LeetCode/blob/master/Minimum%20Swaps%20to%20Make%20Strings%20Equal.java Âü°í
+// https://github.com/cherryljr/LeetCode/blob/master/Minimum%20Swaps%20to%20Make%20Strings%20Equal.java ì°¸ê³ 
 package string;
 
 class Solution {
@@ -23,7 +23,7 @@ class Solution {
         	}
         	
         	if((diffX + diffY) % 2 == 0) {
-        		answer = (diffX + 1) / 2 + (diffY + 1) / 2;	// 00:11, 01:10 ÀÇ µÎ ÄÉÀÌ½º¸¸ Á¸Àç
+        		answer = (diffX + 1) / 2 + (diffY + 1) / 2;	// 00:11, 01:10 ê²½ìš°ë¥¼ ê³ ë ¤í•œ ìˆ˜ì‹
         	}
         }
 //System.out.println("answer:" + answer);
