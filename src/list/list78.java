@@ -3,7 +3,7 @@
 package list;
 
 import java.util.*;
-
+/*
 class Solution {
 	int n;
 	boolean[] visit;
@@ -62,3 +62,4 @@ public class list78 {
 		result = soultion.subsets(nums); // [[],[0]]
 	}
 }
+*/
