@@ -27,22 +27,16 @@ class TreeNode {
 
 class Solution {
 	public void treeSearch(TreeNode root, ArrayList<Integer> list) {
-    	if(root != null) {
-    		list.add(root.val);
-    		if(root.left != null) {
-    			treeSearch(root.left, list);
-    		}
-    		if(root.right != null) {
-    			treeSearch(root.right, list);
-    		}
-    	}
+    	if(root == null) return;
+		treeSearch(root.left, list);
+		list.add(root.val);
+		treeSearch(root.right, list);
 	}
 	
     public int kthSmallest(TreeNode root, int k) {
         int res = 0;
         ArrayList<Integer> list = new ArrayList<Integer>();
         treeSearch(root, list);
-        Collections.sort(list);
         res = list.get(k - 1);
 //System.out.println("res:" + res);
 		return res;
