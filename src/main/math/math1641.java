@@ -22,7 +22,6 @@ System.out.println("res:" + res);
 
 	public static void main(String[] args) {
 		int n = 1;
-
 		int result = countVowelStrings(n); // 5
 
 		n = 2;
