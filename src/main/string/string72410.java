@@ -2,7 +2,6 @@
 // 신규 아이디 추천
 package main.string;
 
-import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
