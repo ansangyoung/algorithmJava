@@ -29,6 +29,5 @@ System.out.println("res:" + res);
 
 		n = 33;
 		result = countVowelStrings(n); // 66045
-
 	}
 }
