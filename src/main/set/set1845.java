@@ -1,7 +1,7 @@
 // https://programmers.co.kr/learn/courses/30/lessons/1845
 // 폰켓몬
 
-package set;
+package main.set;
 
 import java.util.*;
 
@@ -16,7 +16,7 @@ class Solution {
         
         int setSize = set.size();
         answer = setSize > numsLen/2 ? numsLen/2 : setSize;
-//System.out.println("answer:" + answer);
+System.out.println("answer:" + answer);
         return answer;
     }
 }
