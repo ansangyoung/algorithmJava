@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/kth-smallest-element-in-a-bst/
 // 230. Kth Smallest Element in a BST
-package tree;
+package main.tree;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -38,7 +38,7 @@ class Solution {
         ArrayList<Integer> list = new ArrayList<Integer>();
         treeSearch(root, list);
         res = list.get(k - 1);
-//System.out.println("res:" + res);
+System.out.println("res:" + res);
 		return res;
     }
 }
