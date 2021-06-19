@@ -5,34 +5,12 @@ package main.string;
 public class string1529 {
 
 	public static int minFlips(String target) {
-		int res = 0;
-		
-		int lastChgIdx = 0;
-		int dupChk = 0;
+		int res = target.charAt(0) == '0'? 0 : 1;
 		int targetLen = target.length();
 		for (int i = 0; i < targetLen - 1; i++) {
 			if (target.charAt(i) != target.charAt(i + 1)) {
 				res++;
-				lastChgIdx = i;
-				if(i == 0 || i == targetLen - 2) {
-					dupChk++;
-				}
 			}
-		}
-		
-		// case1: 0111110, res == 2, dupChk == 2
-		res += dupChk == 2 ? --dupChk : dupChk;
-		
-		// case2: 000011111, res == 1
-		if(dupChk == 0) {
-			if(lastChgIdx < targetLen - 2) {
-				res++;
-			}
-		}
-		
-		// startwith 0인 case는 최초 1이 나오기 전까지의 0은 제외. 
-		if (targetLen > 0 && target.charAt(0) == '0' && res > 0) {
-			res--;
 		}
 //System.out.println("target:" + target + ", res:" + res);
 //System.out.println("");
