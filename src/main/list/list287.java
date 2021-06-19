@@ -4,7 +4,7 @@ package main.list;
 
 public class list287 {
     public static int findDuplicate(int[] nums) {
-        int constantExtraSpace[] = new int[12500];
+        int constantExtraSpace[] = new int[3126];
         int res = 0;
         for(int numsVal : nums) {
         	if(0 != (constantExtraSpace[numsVal / 32] & (1 << (numsVal % 32)))) {
