@@ -3,12 +3,15 @@
 package test.dp;
 
 import static org.junit.Assert.assertArrayEquals;
+
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class TestDp1314 {
 	private final main.dp.dp1314 dp1314 = new main.dp.dp1314();
 
 	@Test
+	@DisplayName("TestDp1314 TestSoluton()")
 	void TestSoluton() {
 		int[][] mat = new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 		int k = 1;
