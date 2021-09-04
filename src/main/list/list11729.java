@@ -2,6 +2,7 @@
 package main.list;
 import java.util.Scanner;
 
+//public class Main {
 public class list11729 {
 
 	public static StringBuilder sb = new StringBuilder();
