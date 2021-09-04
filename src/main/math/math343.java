@@ -6,20 +6,17 @@ import java.util.*;
 
 public class math343 {
 	public static int integerBreak(int n) {
-		int res = 1;
 		int[] exceptCase = new int[] { 0, 1, 1, 2, 4 };
-
-		if (n > 3) {
-			res *= Math.pow(3, n / 3);
-			if (n % 3 == 1) {
-				res = (res / 3) * exceptCase[4];
-			} else if (n % 3 == 2) {
-				res *= n % 3;
-			}
-		} else {
-			res *= exceptCase[n];
-		}
-//System.out.println("res:" + res);
+        
+        if(n <= 3) return exceptCase[n];
+        
+        int res = 1 * (int)Math.pow(3, n / 3);
+        int nQuot = n % 3;
+        if (nQuot == 1) {
+            res = (res / 3) * exceptCase[4];
+        } else if (nQuot == 2) {
+            res *= nQuot;
+        }
 		return res;
 	}
 
