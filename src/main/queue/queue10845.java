@@ -1,4 +1,6 @@
 // https://www.acmicpc.net/source/28072579 참고
+// https://www.acmicpc.net/problem/10845
+// 큐
 package main.queue;
 
 import java.io.BufferedReader;
