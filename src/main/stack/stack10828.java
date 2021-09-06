@@ -1,4 +1,6 @@
 // https://www.acmicpc.net/source/8520401 참고
+// https://www.acmicpc.net/problem/10828
+// 스택
 package main.stack;
 
 import java.io.BufferedReader;
