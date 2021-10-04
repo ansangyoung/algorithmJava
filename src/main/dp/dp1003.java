@@ -1,13 +1,13 @@
 // https://www.acmicpc.net/problem/1003
 // 피보나치 함수
-package main.basic;
+package main.dp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 //public class Main {
-public class basic1003 {
+public class dp1003 {
 	public static void main(String args[]) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int t = Integer.parseInt(br.readLine());
