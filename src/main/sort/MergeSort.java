@@ -4,9 +4,10 @@ package main.sort;
 public class MergeSort {
 	public static int[] src;
 	public static int[] tmp;
-
+	public static int cnt = 1;
+	
 	public static void main(String[] args) {
-		src = new int[] { 1, 9, 8, 5, 4, 2, 3, 7, 6 };
+		src = new int[] { 10, 9, 8, 7, 6 ,5 ,4, 3, 2, 1 };
 		tmp = new int[src.length];
 		mergeSort(0, src.length - 1);
 		printArray(src);
@@ -27,13 +28,21 @@ public class MergeSort {
 					tmp[idx++] = src[q++];
 				}
 			}
+
+			System.out.print(cnt++ + " 번째 수행 -> ");
 			for (int i = start; i <= end; i++) {
 				src[i] = tmp[i];
+				System.out.print(i + ": " + src[i]);
+				if(i != end) {
+					System.out.print(", ");
+				}
 			}
+			System.out.println("");
 		}
 	}
 
 	public static void printArray(int[] a) {
+		System.out.print("최종 결과 -> ");
 		for (int i = 0; i < a.length; i++) {
 			System.out.print(a[i] + " ");
 		}
