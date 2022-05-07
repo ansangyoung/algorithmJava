@@ -14,12 +14,19 @@ public class QuickSort {
 		}
 
 		int mid = partition(arr, low, high);
+		System.out.println("mid:" + mid);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}
+		System.out.println("\n");
 		sort(arr, low, mid - 1);
 		sort(arr, mid, high);
+
 	}
 
 	private static int partition(int[] arr, int low, int high) {
 		int pivot = arr[(low + high) / 2];
+		System.out.println(low + " " + high + " " + (low + high) / 2 + " " + pivot);
 		while (low <= high) {
 			while (arr[low] < pivot) {
 				low++;
@@ -43,8 +50,9 @@ public class QuickSort {
 	}
 
 	public static void main(String[] args) {
-		int[] testCase = new int[] { 2, 3, 1 };
+		int[] testCase = new int[] { 10, 9, 8, 7, 6 ,1, 2, 3, 4, 5 };
 		quickSort(testCase);
+		System.out.println("최종");
 		for (int i = 0; i < testCase.length; i++) {
 			System.out.print(testCase[i] + " ");
 		}
